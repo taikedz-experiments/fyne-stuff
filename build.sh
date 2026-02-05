@@ -7,5 +7,6 @@ cd "$HERE"
 # https://stackoverflow.com/questions/61319677/flags-needed-to-create-static-binaries-in-golang
 
 #export CGO_ENABLED=0
-go build -trimpath -o bin/gooey -a -ldflags '-extldflags -static' "gooey.go"
+#go build -trimpath -o bin/gooey -a -ldflags '-extldflags -static' "gooey.go"
+go build -trimpath -o bin/gooey "gooey.go"
 
