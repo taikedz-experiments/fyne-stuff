@@ -6,5 +6,6 @@ cd "$HERE"
 # Create a full-static binary that should not require dependencies on libc
 # https://stackoverflow.com/questions/61319677/flags-needed-to-create-static-binaries-in-golang
 
-CGO_ENABLED=0 go build -trimpath -o bin/gooey -a -ldflags '-extldflags -static' "gooey.go"
+#export CGO_ENABLED=0
+go build -trimpath -o bin/gooey -a -ldflags '-extldflags -static' "gooey.go"
 

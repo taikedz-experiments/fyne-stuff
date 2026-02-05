@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-    gooey.Hello()
+    gooey.Main()
 }
